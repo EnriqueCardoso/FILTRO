@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    background-position: center;
+}
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+}
+
+#lista {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#lista ul {
+    list-style: none;
+}
+
+#pesquisa {
+    font-size: 18px;
+}
+
+#pesquisa input {
+    width: 25vh;
+    border-radius: 5px;
+    height: 3vh;
+    padding: 5px;
+}

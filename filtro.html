@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filtro.css">
+    <script>
+        function pesquisar() {
+    let pesquisa = document.getElementById("pesquisa-box").value;
+    pesquisa = pesquisa.toLowerCase();
+    let itensLista = document.getElementsByClassName("itens");
+
+    for (i = 0; i < itensLista.length; i++) {
+        if (!itensLista[i].innerHTML.toLocaleLowerCase().startsWith(pesquisa)) {
+            itensLista[i].style.display = "none"
+        } else {
+            itensLista[i].style.display = "list-item"
+        }
+    }
+}
+    </script>
+    <title>Filtro Brabo</title>
+</head>
+<body>
+        <h1>Filtro Brabo</h1>
+        <div id="pesquisa">
+            <label for="pesquisa-box">Digite um dos nomes listados abaixo:</label>
+            <input type="search" id="pesquisa-box" oninput="pesquisar()">
+        </div>
+
+        <div id="lista">
+            <ul>
+                <li class="itens">Luciano Hulk</li>
+                <li class="itens">José Marquinhos</li>
+                <li class="itens">Benedito Das Flores</li>
+                <li class="itens">Luciano Hang</li>
+                <li class="itens">Fausto Vera</li>
+                <li class="itens">Benedito Cunha</li>
+                <li class="itens">José Pereira</li>
+                <li class="itens">Faustão</li>
+                <li class="itens">Marcola</li>
+                <li class="itens">Joãozinho</li>
+                <li class="itens">Fred</li>
+                <li class="itens">Marcelo Das Cobra</li>
+            </ul>
+        </div>
+</body>
+</html>
